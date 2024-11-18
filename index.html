@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Link Boxicons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+     <div class="popup-video">
+        <span class="close">&times;</span>
+        <iframe class="video" src="https://www.youtube.com/embed/hQEpYRzKL0s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     </div>
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-area'></i><p>ShowSnap</p>
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="ticket/ticketpage.html">Tickets</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+        <div class="btn-and-toggle">
+            <div class="mode-toggle">
+                <i class="bx bx-moon" id="theme-icon"></i>
+            </div>
+            <a href="loginpage/login.html" class="btn">Log In</a>
+        </div>
+    </header>
+    <div class="mobile-header">
+        <ul class="navbar">
+            <li><a href="#home" class="home-active"><i class='bx bxs-home-alt-2' ></i><br><span>Home</span></a></li>
+            <li><a href="#movies"><i class='bx bx-camera-movie' ></i><br><span>Movies</span></a></li>
+            <li><a href="#tickets"><i class='bx bx-barcode'></i><br><span>Tickets</span></a></li>
+            <li><a href="#support"><i class='bx bx-support' ></i><br><span>Support</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Home  -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/home1.jpg" alt="">
+                <div class="home-text">
+                    <span>NOW SHOWING</span>
+                    <h1>John Wick</h1>
+                    <a href="" class="btn">Book Tickets</a>
+                    <a href="" class="play" data-trailer="https://www.youtube.com/watch?v=C0BMx-qxsP4" onclick="showTrailer();">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home2.jpg" alt="">
+                <div class="home-text">
+                    <span>NOW SHOWING</span>
+                    <h1>Doctor Strange <br>In The Multiverse Of Madness</h1>
+                    <a href="" class="btn">Book Tickets</a>
+                    <a href="" class="play" data-trailer="https://www.youtube.com/watch?v=aWzlQ2N6qqg" onclick="showTrailer();">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home3.jpg" alt="">
+                <div class="home-text">
+                    <span>NOW SHOWING</span>
+                    <h1>Wicked</h1>
+                    <a href="" class="btn">Book Tickets</a>
+                    <a href="" class="play" data-trailer="https://www.youtube.com/embed/hQEpYRzKL0s" onclick="showTrailer();">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home4.jpg" alt="">
+                <div class="home-text">
+                    <span>NOW SHOWING</span>
+                    <h1>Purna Bahadur<br>Ko Sarangi</h1>
+                    <a href="" class="btn">Book Tickets</a>
+                    <a href="" class="play" data-trailer="https://www.youtube.com/watch?v=5zbtEmxEyGk" onclick="showTrailer();">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Movies  -->
+    <div class="movies" id="movies">
+        <h2 class="heading">New Releases</h2>
+        <!-- Movies container  -->
+        <div class="movies-container">
+            <!-- box-1  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m1.jpg" alt="">
+                </div>
+                <h3>John Wick</h3>
+            </div>
+            <!-- box-2  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m2.jpg" alt="">
+                </div>
+                <h3>Dr. Strange in the<br>Multiverse of Madness</h3>
+            </div>
+            <!-- box-3  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m3.jpg" alt="">
+                </div>
+                <h3>Totally Killer</h3>
+            </div>
+            <!-- box-4  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m4.jpg" alt="">
+                </div>
+                <h3>Purna Bahadur Ko Sarangi</h3>
+            </div>
+            <!-- box-5  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m5.jpg" alt="">
+                </div>
+                <h3>Wicked</h3>
+            </div>
+            <!-- box-6  -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m6.jpg" alt="">
+                </div>
+                <h3>The Black Phone</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- coming  -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- coming contanier  -->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <!-- box-1  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c1.jpg" alt="">
+                    </div>
+                    <h3>Nosferatu</h3>
+                </div>
+                <!-- box-2  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c2.jpg" alt="">
+                    </div>
+                    <h3>Pushpa 2 : The Rule</h3>
+                </div>
+                <!-- box-3  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c3.jpg" alt="">
+                    </div>
+                    <h3>Mufasa : The Lion King</h3>
+                </div>
+                <!-- box-4  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c4.jpg" alt="">
+                    </div>
+                    <h3>Late Night With The Devil</h3>
+                </div>
+                <!-- box-5  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c5.webp" alt="">
+                    </div>
+                    <h3>One Of Them Days</h3>
+                </div>
+                <!-- box-6  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c6.jpg" alt="">
+                    </div>
+                    <h3>Blade Runner 2049</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <i class='bx bxs-area'></i><p>ShowSnap</p>
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-messenger'></i></a>
+            <a href=""><i class='bx bxl-google'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+        <p>Copyright © 2024 ShowSnap. All rights reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

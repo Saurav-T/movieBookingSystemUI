@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ticket.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="tickets">
+        <div class="tic">
+            <div class="barcode">
+                <div class="card">
+                    <p id="row">ROW J</p>
+                    <p id="date">7 September 2024</p>
+                </div>
+                <div class="card">
+                    <p id="seat">Seat 1</p>
+                    <p id="time">23:00</p>
+                </div>
+                <svg id="barcode"></svg>
+                <p class="ticketLogo">ShowSnap<br>
+                    <i class='bx bxs-area'></i>
+                </p>
+            </div>
+            <div class="ticketDetails">
+                <img src="ticket.jpg">
+                <div class="desc">
+                    <p id="title">The Hunger Games</p>
+                </div>
+            </div> 
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+    <script>
+        JsBarcode("#barcode", "TicketNoHere");
+    </script>
+</body>
+</html>
